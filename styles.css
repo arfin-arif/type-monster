@@ -197,3 +197,20 @@ button {
     flex-direction: column;
   }
 }
+
+/* blog styles */
+.body {
+  color: white;
+}
+
+.blog-questions {
+  margin: 15px;
+}
+
+.question {
+  margin-top: 20px;
+}
+
+.answer {
+  padding-left: 25px;
+}
