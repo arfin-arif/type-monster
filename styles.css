@@ -164,7 +164,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   padding: 20px 30px;
   color: white;
   border-radius: 15px;
@@ -208,9 +208,7 @@ button {
   margin: 15px;
 }
 
-.question {
-  margin-top: 20px;
-}
+
 
 .answer {
   padding-left: 25px;
