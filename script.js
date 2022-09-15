@@ -42,10 +42,13 @@ const typeController = (e) => {
 
   const newLetterCorrect = validate(newLetter);
 
+
   if (newLetterCorrect) {
     display.innerHTML += `<span class="green">${newLetter === " " ? "▪" : newLetter}</span>`;
   } else {
     display.innerHTML += `<span class="red">${newLetter === " " ? "▪" : newLetter}</span>`;
+    // incising  error value 
+    errorCount++
   }
 
   // check if given question text is equal to user typed text
@@ -53,6 +56,8 @@ const typeController = (e) => {
     gameOver();
   }
 };
+
+
 
 const validate = (key) => {
   if (key === questionText[userText.length - 1]) {
@@ -77,6 +82,7 @@ const gameOver = () => {
   display.innerHTML = "";
   // make it inactive
   display.classList.add("inactive");
+
   // show result
   resultModal.innerHTML += `
     <h1>Finished!</h1>
